@@ -1,0 +1,36 @@
+html, .body {
+  background-color: black;
+  color: white;
+}
+
+#calcOutput {
+  background: white;
+  width: 250px;
+  height: 75px;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: black;
+}
+
+#calculator {
+  background: gray;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+#show {
+  padding-left: 50px;
+  font-size: 2em;
+}
+
+a {
+  margin: 5px;
+  /* width: 1vw;
+  height: 1vw; */
+}
