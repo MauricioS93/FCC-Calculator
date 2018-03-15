@@ -1,6 +1,8 @@
 
-// Show
+// CalcOutput
 let show = document.querySelector('#show');
+let message = document.querySelector('#message');
+
 //Numbers
 let pressed = document.querySelectorAll(".pressed");
 // Operators
@@ -10,9 +12,16 @@ let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 // Results
 let input = [];
 let result = 0;
-
 // Initial state
 show.innerHTML = result;
+
+// Using the keyboard
+this.addEventListener('keyup', (data)=>{
+  console.log(data.key);
+});
+
+
+
 
 // Logic when pressed any button
 pressed.forEach(press => {
@@ -29,8 +38,9 @@ pressed.forEach(press => {
 
 // Logic updating show 
 function updateShow(obj){
-  //check if input is 0 you can do equal or press any of the operators
-  if(input.length < 1 && (operators.includes(obj))){
+  //check if input is 0 you can do equal or press any of the operators unless is '-' for negative numbers.
+  if(input.length < 1 && (operators.includes(obj)) && obj !== '-'){
+    message.innerHTML = "Can't do that";
     console.log('error its an operator');
   // checks second to last input and if its an operator and the new input is also an operator it doesnt let you. 
   } else if (operators.includes(input[input.length-1]) && (operators.indexOf(obj) !== -1) || operators2.includes(input[input.length-1]) && (operators2.indexOf(obj) !== -1)){
