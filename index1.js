@@ -83,7 +83,9 @@ function evaluateResult(obj){
   }
 }
 
+// ===================
 // Using the keyboard
+// ===================
 this.addEventListener('keyup', (data)=>{
   if(numbers.includes(Number(data.key)) || [...operators, ...operators2].includes(data.key)){
     let touch = data.key;
