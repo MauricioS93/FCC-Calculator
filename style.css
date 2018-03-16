@@ -1,6 +1,7 @@
 html, .body {
   background-color: black;
   color: white;
+  font-family: Ubuntu;
 }
 
 #calcOutput {
@@ -16,12 +17,14 @@ html, .body {
   display: grid;
 }
 
-#message{
+#message {
   text-align: center;
   color: #fb3838;
-  font-size: 12px;
+  font-size: 16px;
   height: 10px;
+  font-weight: 700;
   margin-top: 2px;
+  letter-spacing: 2px;
 }
 
 #show {
